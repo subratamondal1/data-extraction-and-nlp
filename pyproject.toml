@@ -2,12 +2,21 @@
 name = "data-extraction-and-nlp"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Subrata Mondal", "subratasubha2@gmail.com"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.8"
+pathlib = "^1.0.1"
+requests = "^2.31.0"
+bs4 = "^0.0.1"
+pandas = "2.0.3"
+openpyxl = "^3.1.2"
+nltk = "^3.8.1"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
 
 [build-system]
 requires = ["poetry-core"]
