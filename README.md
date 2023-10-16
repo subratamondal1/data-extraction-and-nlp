@@ -6,10 +6,39 @@ Everything is completed, for detailed solution checkout the [**`Data_Extraction_
 - [**NLTK**](https://www.nltk.org/index.html): Natural Language Toolkit.
 
 # ⚙️ Reproducible
-To make it run on your local machine you need to first install `poetry`
+To make it run on your local machine you need to first install `poetry`.
 
-**For MACOSX/LINUX**
+**Install poetry for MACOSX/LINUX**
+
 ```bash
-curl -sSL https://install.python-poetry.org | python3 -
+1. curl -sSL https://install.python-poetry.org | python3 -
 ```
-more steps coming soon...till now see the notebook.
+**Clone this repo**
+
+```bash
+2. git clone git@github.com:subratamondal1/data-extraction-and-nlp.git
+```
+
+**Move inside the folder**
+
+```bash
+3. cd data-extraction-and-nlp
+```
+
+**Install the required dependencies**
+```bash
+4. poetry install
+```
+**Run the .py scripts in the following order from the folder `data-extraction-and-nlp/data-extraction-and-nlp`**
+```bash
+5.1. poetry run python3 article_extractor.py 
+```
+this will create a folder `extracted_articles` where all the extracted files will be generated with the name of the `URL_ID.txt`, conatining a **Title** and **Text**.
+
+```bash
+5.2. poetry run python3 custom_inputs.py
+5.3. poetry run python3 nlp.py
+```
+**Result**
+
+`output.xlsx` file will be generated inside `outputs/` folder.
